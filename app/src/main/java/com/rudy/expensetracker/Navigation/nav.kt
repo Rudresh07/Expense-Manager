@@ -35,13 +35,7 @@ fun NavHostScreen() {
     val startDestination = if (currentUser != null) "/dashboard" else "/signin"
 
     Scaffold(
-        bottomBar = {
-            NavigationBar {
-                val navBackStackEntry by navController.currentBackStackEntryAsState()
-                val currentDestination = navBackStackEntry?.destination
-            }
-        },
-                contentWindowInsets = WindowInsets(0, 0, 0, 0)
+        contentWindowInsets = WindowInsets(0, 0, 0, 0) // Keeps consistent padding for content
     ) { paddingValues ->
         NavHost(
             navController = navController,
@@ -81,3 +75,4 @@ fun NavHostScreen() {
         }
     }
 }
+

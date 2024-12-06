@@ -58,7 +58,7 @@ fun DashboardScreen(navController: NavController) {
 
     Scaffold(modifier = Modifier.fillMaxSize(),
         bottomBar = {
-            NavigationBar(containerColor = Color.White, tonalElevation = 20.dp) {
+            NavigationBar(containerColor = Color.White) {
                 NavigationBarItem(
                     icon = { Icon(Icons.Default.Home, contentDescription = "Dashboard") },
                     label = { Text("Dashboard") },
