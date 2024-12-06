@@ -1,18 +1,14 @@
 package com.rudy.expensetracker.Navigation
 
 import android.util.Log
-import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.rudy.expensetracker.view.AddExpenseScreen
@@ -31,17 +27,10 @@ fun NavHostScreen() {
         Log.d("NavHostScreen", "Current user: $currentUser")
     }
 
-    // Determine the start destination based on user's login state
     val startDestination = if (currentUser != null) "/dashboard" else "/signin"
 
     Scaffold(
-        bottomBar = {
-            NavigationBar {
-                val navBackStackEntry by navController.currentBackStackEntryAsState()
-                val currentDestination = navBackStackEntry?.destination
-            }
-        },
-                contentWindowInsets = WindowInsets(0, 0, 0, 0)
+        contentWindowInsets = WindowInsets(0, 0, 0, 0) // Keeps consistent padding for content
     ) { paddingValues ->
         NavHost(
             navController = navController,
@@ -81,3 +70,4 @@ fun NavHostScreen() {
         }
     }
 }
+
