@@ -39,6 +39,7 @@ An Android application built with **Kotlin** and **Jetpack Compose**, integrated
 <img src="https://github.com/user-attachments/assets/23e57085-f177-4522-8096-69d3f5b5819e" width="200" height="400" />
 <img src="https://github.com/user-attachments/assets/44de494b-7ea3-446c-8679-b809f13053c5" width="200" height="400" />
 <img src="https://github.com/user-attachments/assets/72e8c671-5440-4825-b6f9-7849f0d6b65d" width="200" height="400" />
+
 ## Installation  
 
 To install and run RecipeEase on your local machine, follow these steps:
