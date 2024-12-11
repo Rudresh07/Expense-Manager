@@ -28,7 +28,7 @@ An Android application built with **Kotlin** and **Jetpack Compose**, integrated
 ### Backend  
 - **Firebase**:  
   - **Realtime Database**: For storing and fetching expense data in real-time.  
-  - **Firebase Authentication** (Optional): To secure user data with login functionality.  
+  - **Firebase Authentication** : To secure user data with login functionality.  
 
 
 ## Screenshots
